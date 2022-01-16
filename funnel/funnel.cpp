@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-	string message = "Hello Funnel.";
+    string message = "Hello Funnel.";
 
-	cout << message << endl;
+    cout << message << endl;
 
-	return 0;
+    return 0;
 }
