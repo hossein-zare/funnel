@@ -1,12 +1,11 @@
 ﻿#include "funnel.h"
-
-using namespace std;
+#include "net/http-server.h"
 
 int main()
 {
-    string message = "Hello Funnel.";
-
-    cout << message << endl;
+    int code = 200;
+  
+    std::cout << get_http_response_message(&code);
 
     return 0;
 }
