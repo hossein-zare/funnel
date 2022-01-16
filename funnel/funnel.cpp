@@ -1,12 +1,12 @@
-﻿// funnel.cpp : Defines the entry point for the application.
-//
-
-#include "funnel.h"
+﻿#include "funnel.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello Funnel." << endl;
+	string message = "Hello Funnel.";
+
+	cout << message << endl;
+
 	return 0;
 }
