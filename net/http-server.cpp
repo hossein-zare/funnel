@@ -1,6 +1,6 @@
 #include "http-server.h"
 
-std::string get_http_response_message(int* code) {
+std::string get_http_response_message(const int* code) {
     switch (*code) {
     case 200:
         return "OK";
