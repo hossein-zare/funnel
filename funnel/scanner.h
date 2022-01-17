@@ -5,10 +5,12 @@
 
 class Scanner {
 public:
-    int line = 0;
-    const std::string* path;
-
     Scanner(const std::string* path);
 
-    int getLine();
+    int getLine() const;
+    const std::string* getPath() const;
+
+private:
+    int line = 0;
+    const std::string* path;
 };
