@@ -5,5 +5,5 @@
 
 class Parser {
 public:
-    void parse(std::string* content);
+    void parse(const std::string* content, const int& line);
 };
