@@ -2,15 +2,18 @@
 
 #include <string>
 #include <fstream>
+#include "parser.h"
 
 class Scanner {
 public:
-    Scanner(const std::string* path);
+    Scanner(std::string* path);
 
     int getLine() const;
     const std::string* getPath() const;
 
+    void scan(Parser& parser);
+
 private:
     int line = 0;
-    const std::string* path;
+    std::string* path = nullptr;
 };
