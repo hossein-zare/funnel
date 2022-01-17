@@ -2,8 +2,6 @@
 
 int main()
 {
-    int code = 200;
-  
     std::string path = "./code.fl";
 
     Scanner s(&path);
