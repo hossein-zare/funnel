@@ -6,7 +6,7 @@ int main()
 
     Scanner s(&path);
 
-    std::cout << *s.path;
+    std::cout << s.getLine();
 
     return 0;
 }
