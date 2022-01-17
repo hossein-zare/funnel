@@ -1,7 +1,5 @@
 ﻿#include "funnel.h"
 
-using namespace std;
-
 int main()
 {
     std::string path = "./test/test.fl";
