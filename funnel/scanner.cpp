@@ -23,6 +23,6 @@ void Scanner::scan(Parser& parser) {
 
     while (std::getline(File, data)) {
         this->line++;
-        parser.parse(&data, this->line);
+        parser.parse(&data, this->getLine());
     }
 }
