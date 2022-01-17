@@ -25,4 +25,6 @@ void Scanner::scan(Parser& parser) {
         this->line++;
         parser.parse(&data, this->getLine());
     }
+
+    File.close();
 }
