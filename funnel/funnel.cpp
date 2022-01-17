@@ -1,11 +1,14 @@
 ﻿#include "funnel.h"
-#include "net/http-server.h"
 
 int main()
 {
     int code = 200;
   
-    std::cout << get_http_response_message(&code);
+    std::string path = "./code.fl";
+
+    Scanner s(&path);
+
+    std::cout << *s.path;
 
     return 0;
 }
