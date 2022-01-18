@@ -22,8 +22,7 @@ void Scanner::scan(Parser& parser) {
     std::string data;
 
     while (std::getline(File, data)) {
-        this->line++;
-        parser.parse(&data, this->getLine());
+        parser.parse(&data, ++this->line);
     }
 
     File.close();
