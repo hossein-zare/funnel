@@ -15,5 +15,5 @@ public:
 
 private:
     int line = 0;
-    std::string* path = nullptr;
+    std::string* path;
 };
